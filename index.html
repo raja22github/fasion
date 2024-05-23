@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap-5.3.3-dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm shadow-sm fixed-top navbar-white py-3 bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="javascript:void(0)">Fashion World</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" onclick="linkcolor(this)" id="abt" href="#about">About</a>
+                <div class="under_line" id="abtline"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" onclick="linkcolor(this)" id="fas" href="#fashion">Fashion</a>
+                <div class="under_line" id="fasline"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" onclick="linkcolor(this)" id="tre" href="#trends">Trends</a>
+                <div class="under_line" id="treline"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" onclick="linkcolor(this)" id="con" href="#contact">Contact</a>
+                <div class="under_line" id="conline"></div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-dark btnhov" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <section class="sec1 mt-5">
+        <div class="trans">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="inbox text-capitalize text-center text-white">
+                            <h1 class="display-1" id="banner_head">
+                               
+                            </h1>
+                            <p class="display-6" id="banner_para"></p>
+                            <button class="btn btn-dark bg-black btnhov my-3">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec2 pt-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inbox1 pt-5">
+                        <h1>About Us</h1>
+                        <div class="line_left bg-dark pt-1 my-3"></div>
+                        <p style="text-align: justify;" >
+                            <img src="about_img.jpg"  alt="" style="float: right;" class="abtimg">
+                            Dress is an important feature of all human societies.. In addition to the obvious function of providing protection and warmth, dress serves many other purposes, most of them having to do with communicating our identity to others. Indeed protection and warmth may not have been the earliest purpose of dress. Many people have always lived in warm climates where clothing is not needed for protection from the elements, yet they have developed forms of dress. <br>
+                        Modesty is another commonly cited purpose for dress. Yet the definition of modesty varies greatly from place to place, and even in the same locality, over the course of time. In Muslim cultures, for example, both men and women cover most of the body in public, as do people in many other times and places. However, in other times and places exposure of various parts of the body may not be a concern.
+                            <br>
+                        Fashion or style is another purpose that drives dress in some cultures. Fashion is a process by which the accepted form of dress is transformed. Mass fashion as it is has been termed in industrialized societies is transformed for reasons that are basically economic. Mass fashion is driven by a manufacturing and distribution system that is motivated to promote frequent changes in styles- that is, frequent changes in the definition of what kinds of dress are beautiful, or confer the desired status or group identity. Since many of the new ideas for mass fashion these days are drawn from the street, even those who profess to be "anti-fashion" are subjected to the pressure to innovate, if they wish to wear styles that remain distinguishable from the main stream.
+                        <p id="demo" class="collapse">
+                            <b>1. Creation of Clothing and Accessories:</b>
+                            <br>
+                               * Fashion involves the design, production, and styling of clothing, footwear, accessories, cosmetics, and jewelry.
+                               <br>
+                               * Different cultural aesthetics influence the creation of these items, resulting in diverse styles and trends.
+                               <br>
+                            <b>2. Signifiers of Social Status and Self-Expression:</b>
+                            <br>
+                                * Fashion serves as a way to express one’s identity and social status.
+                                <br>
+                                * The clothes we wear can communicate our values, beliefs, and group affiliations.
+                               <br>
+                            <b>3. Historical Context:</b>
+                            <br>
+                                * The term “fashion” has a long history. The French word “mode,” meaning “fashion,” dates back to 1482, while the English word denoting something “in style” emerged in the 16th century.
+                                <br>
+                                * Throughout history, people have used clothing and adornments to enhance their appearance and convey social messages.
+                                <br>
+                            
+                        <b>4. Fashion Trends:</b>
+                        <br>
+                            * Fashion trends refer to the prevailing styles and preferences at a given time.
+                            <br>
+                            * These trends can vary widely, from minimalist elegance to bold and avant-garde designs.
+                            <br>       
+                        <b>5. Environmental Impact and Sustainability:</b>
+                        <br>
+                            * With mass production and globalization, fashion’s environmental impact has become a pressing concern.
+                            <br>
+                           * Efforts are underway to reduce waste, promote sustainable materials, and create more eco-friendly fashion choices.
+                        
+                    </p>
+                        <button id="readmorebtn" onclick="spara()" class="btn btn-dark btnhov" data-bs-toggle="collapse" data-bs-target="#demo">Read more</button>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3 py-5" id="fashion">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox2 pt-5 ">
+                        <h1 class="text-center">Dress, Fashion, and Social Change</h1>
+                        <div class="line_center bg-dark pt-1 my-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-4 col-lg-4">
+                    <div class="inbox3 overflow-hidden">
+                        <img src="dress (1).jpg" class="dtimage mt-3" width="100%" alt="">
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-xl-4 col-lg-4"> 
+                    <div class="inbox3 overflow-hidden">
+                        <img src="dress (2).jpg" class="dtimage mt-3" width="100%" alt="">
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-xl-4 col-lg-4"> 
+                    <div class="inbox3 overflow-hidden">
+                        <img src="dress (3).jpg" class="dtimage mt-3" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec5 py-5" id="trends">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox4 pt-5 text-center">
+                        <h1>Fashion trends</h1>
+                        <div class="line_center bg-dark pt-1 my-3"></div>
+                        <p>A fashion trend signifies a specific look or expression that is spread across a population at a specific time and place. A trend is considered a more ephemeral look, not defined by the seasons when collections are released by the fashion industry. A trend can thus emerge from street style, across cultures, and from influencers and other celebrities.</p>
+                        <p>Fashion trends are influenced by several factors, including cinema, celebrities, climate, creative explorations, innovations, designs, political, economic, social, and technological. Examining these factors is called a PEST analysis. Fashion forecasters can use this information to help determine the growth or decline of a particular trend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec6">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="inbox5 mt-3 overflow-hidden">
+                        <img src="trend (1).jpg" class="dtimage" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="inbox5 mt-3 overflow-hidden">
+                        <img src="trend (2).jpg" class="dtimage" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="inbox5 mt-3 overflow-hidden">
+                        <img src="trend (3).jpg" class="dtimage" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="inbox5 mt-3 overflow-hidden">
+                        <img src="trend (4).jpg" class="dtimage" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec7 py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inbox6 pt-5 ">
+                        <h1 class="text-center">Contact Us</h1>
+                        <div class="line_center bg-dark pt-1 my-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec8">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox7">
+                        <form action="/action_page.php">
+                            <div class="mb-3 mt-3">
+                                <label for="name" class="form-label fw-bold">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name . . . ." name="name">
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="inbox7">
+                        <div class="mb-3 mt-3">
+                            <label for="num" class="form-label fw-bold">Mobile</label>
+                            <input type="number" class="form-control" id="num" placeholder="Enter Your Number . . . ." name="num">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox7">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Your Email . . . ." name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="inbox7">
+                        <div class="mb-3 mt-3">
+                            <label for="sub" class="form-label fw-bold">Subject</label>
+                            <input type="text" class="form-control" id="sub" placeholder="Enter Your Subject . . . ." name="sub">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox7">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control" placeholder="Enter your Message . . . ." rows="13" id="comment" name="text"></textarea>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <button class="btn btn-dark btnhov">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="inbox7">
+                        <div class="mb-3 mt-3">
+                            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">google map embed html</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+       function spara() {
+        var rmbtn = document.getElementById("readmorebtn");
+        var rmpara = document.getElementById("demo");
+        if (rmbtn.ariaExpanded == "true") {
+            rmbtn.innerHTML = "Read Less";
+        } else {
+            rmbtn.innerHTML = "Read More";
+        }
+    }
+    function linkcolor(element) {
+        var links = document.querySelectorAll(".nav-link");
+        var underlines = document.querySelectorAll(".under_line");
+        // Reset all underlines
+        underlines.forEach(function (underline) {
+            underline.style.backgroundColor = "white";
+        });
+        links.forEach(function (link) {
+            link.style.color = "black";
+        });
+        // Set underline for clicked link
+        var id = element.id;
+        var linkcolor = document.getElementById(id);
+        linkcolor.style.color="red";
+        var underlineId = id + "line";
+        var currentUnderline = document.getElementById(underlineId);
+        currentUnderline.style.backgroundColor = "red";
+        currentUnderline.style.height = "1.5px";
+        currentUnderline.style.width = "80%";
+       
+    }
+    </script>
+    <script>
+        var i = 0;
+        var banner_head = 'Welcome to the world of fashion';
+        var banner_para = 'Explore the new fashion ideas here';
+        var speed = 100;
+
+        function typeWriter() {
+            if (i < banner_para.length) {
+                document.getElementById("banner_head").innerHTML += banner_head.charAt(i);
+                document.getElementById("banner_para").innerHTML += banner_para.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+    </script>
+    <style>
+        .nav-item:hover .under_line{
+    background-color: black !important;
+    width: 80%;
+    margin: auto;
+    height: 1.5px;
+}
+.nav-link:hover{
+    color: red !important;
+}
+.under_line{
+    width: 0%;
+    transition: 1s;
+    height: 1.5px;
+    margin: auto;
+}
+    </style>
+</body>
+</html>
